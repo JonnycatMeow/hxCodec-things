@@ -295,7 +295,7 @@ void setFlag(int flag, int value)
 
 void callbacks(const libvlc_event_t *event, void *ptr)
 {
-	struct ctx *callback = reinterpret_cast< struct ctx*> (*ptr);
+	struct ctx *callback;
 
 	switch (event->type)
 	{
